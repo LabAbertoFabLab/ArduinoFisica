@@ -1,0 +1,26 @@
+Sumário: calculo da potência de um painel solar com recurso a um gráfico V/I
+
+Objetivos:
+- Utilização do sensor de intensidade de corrente elétrica;
+- Gráfico V/I
+- Cálculo da potência
+- Calibrar o sensor
+- Leitura de um pino analógico;
+- Componentes de programação do ARDUINO
+
+Outras ideias para desenvolver:
+
+- Calibrar o sensor 
+- Comentar o código: descrever cada linha de código
+- integração do ARDUINO com o PROCESSING;
+
+Material:
+Voltimetro e amperimetro
+
+Referências:
+
+
+
+Código ARDUINO:
+
+Código PROCESSING:
