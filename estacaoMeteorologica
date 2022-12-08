@@ -1,0 +1,26 @@
+Sumário: utilizar o KIT SEED como uma estação rudimentar: pressão, temperatura e humidade
+
+Objetivos:
+- Utilização do sensor de humidade, temperatura e pressão
+- Relacionar a diferença de pressão com o estado do tempo
+- Utilizar o ecrã OLED
+- Calibrar os sensores
+- Leitura de um pino analógico;
+- Componentes de programação do ARDUINO
+
+Outras ideias para desenvolver:
+
+- Calibrar o sensor 
+- Comentar o código: descrever cada linha de código
+- integração do ARDUINO com o PROCESSING;
+
+Material:
+
+
+Referências:
+
+
+
+Código ARDUINO:
+
+Código PROCESSING:
