@@ -1,0 +1,25 @@
+Sumário: Medição da velocidade do som utilizando o sensor
+
+Objetivos:
+- Utilização de um sonar;
+- Calibrar o sensor
+- Echo e trigger;
+- Calcular a velocidade do Som
+- Componentes de programação do ARDUINO
+
+Outras ideias para desenvolver:
+
+- Identificar as linitações do sensor 
+- Comentar o código: descrever cada linha de código
+- integração do ARDUINO com o PROCESSING;
+
+Material:
+
+
+Referências:
+- Bblioteca HC-SR04 de (???)
+
+
+Código ARDUINO:
+
+Código PROCESSING:
