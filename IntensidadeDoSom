@@ -1,0 +1,21 @@
+Sumário: Medição da intensidade do som utilizando o sensor
+
+Objetivos:
+- Utilização do sensor de som;
+- Calibrar o sensor
+- Leitura de um pino analógico;
+- Componentes de programação do ARDUINO
+
+Outras ideias para desenvolver:
+
+- Calibrar o sensor 
+- Comentar o código: descrever cada linha de código
+- integração do ARDUINO com o PROCESSING;
+
+Referências:
+
+
+
+Código ARDUINO:
+
+Código PROCESSING:
