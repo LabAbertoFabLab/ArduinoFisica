@@ -1,14 +1,14 @@
 Sumário: esta actividade integra a utilização do Processing para efeitos de vizualização. 
-O jogo usa o potenciómetro para controlar uma barra no ecrã. Essa barra ao coincidir com outras peças que caiem na vertical geram um ponto.
+O jogo usa o potenciómetro para controlar uma barra no ecrã. Essa barra ao coincidir com as outras peças, que caiem na vertical, geram um ponto.
 
 Objetivos:
 - Utilização de um potenciómetro e de um sensor de luz: leitura de um pino analógico;
-* Leitura e escrita de dados na porta serial;
-+ integração do ARDUINO com o PROCESSING;
+- Leitura e escrita de dados na porta serial;
+- integração do ARDUINO com o PROCESSING;
 
 Outras ideias para desenvolver:
 
-- Comentar o código: 
+- Comentar o código: descrever cada linha de código
 - Alterar cores e design
 - Controlar a barra com o sensor de luz;
 - Alterar o formato da barra
