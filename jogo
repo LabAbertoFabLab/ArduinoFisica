@@ -2,8 +2,8 @@ Sumário: esta actividade integra a utilização do Processing para efeitos de v
 O jogo usa o potenciómetro para controlar uma barra no ecrã. Essa barra ao coincidir com outras peças que caiem na vertical geram um ponto.
 
 Objetivos:
-- Utilização de um potenciómetro e de um sensor de luz: leitura de um pino analógico;
-- Leitura e escrita de dados na porta serial;
+* Utilização de um potenciómetro e de um sensor de luz: leitura de um pino analógico;
++ Leitura e escrita de dados na porta serial;
 - integração do ARDUINO com o PROCESSING;
 
 Outras ideias para desenvolver:
