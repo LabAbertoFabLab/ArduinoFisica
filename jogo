@@ -10,10 +10,18 @@ Esse quadrado ao coincidir com as outras peças, que caiem na vertical, geram um
 - CONECTAR o ARDUINO ligado ao KIT SEEED com o cabo USB A/B;
 - Abrir o ARDUINO IDE;
 - Abrir o PROCESSING;
-- Dentro do ARDUINO IDE
+- Carregar no botão "PLAY" (executar) ou no MENU -> SKETCH -> clicar em EXECUTAR;
+- Rodar o potenciometro na placa SEEED e jogar;
+
+Análise do Código
+- Para vizualizar os dados do potenciometro, desligar o SKETCH do PROCESSING;
+- Dentro do ARDUINO IDE abrir o "MONITOR SERIE";
+- no botão dentro da janela no canto superior direito ou através do MENU, clicar em "MONITOR SERIE";
+- Rodar o potenciometro e correlacionar com os dados no MONITOR SERIE.
 
 
-**Outras ideias para desenvolver:**
+
+**Outras ideias possíveis:**
 
 - Comentar o código: descrever cada linha de código
 - Discutir a aceleração a atribuir a cada peça
@@ -22,9 +30,9 @@ Esse quadrado ao coincidir com as outras peças, que caiem na vertical, geram um
 - Alterar o formato da barra
 - Integrar no processing, para as barras que não forem apanhadas, os pontos que forem perdidos, implica barras que saltitam em movimentos parabólicos
 
-Código ARDUINO:
+**Código ARDUINO:**
 
-Código PROCESSING:
+**Código PROCESSING:**
 
 **Glossário:**
 ARDUNINO IDE - A IDE (Arduino Integrated Development Environment - Arduino Software (IDE)) do Arduino é um software de programação em ambiente de desenvolvimento integrado.
