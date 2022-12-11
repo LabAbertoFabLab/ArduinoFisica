@@ -7,6 +7,17 @@ Medição da intensidade do som utilizando o sensor
 - Leitura de um pino analógico;
 - Componentes de programação do ARDUINO
 
+**Procedimento**
+- Abrir o ARDUINO IDE;
+- Conectar o USB A/B ao arduino;
+- Abrir o "monitor serie" e analisar os dados;
+- Abrir o "Plotter Serie" e analisar o comportamento do sensor;
+- Testar e comparar com sons tipicos da primeira referência: ajustar valores no código;
+
+**Análise do Código**
+- Identificar as três componentes principais no código do ARDUINO IDE: procurar o inicio e fim das chavetas;
+- Identificar a função de comunicação com o computador;
+- Identificar o pino a que está conectado o sensor de som;
 
 
 **Outras ideias para desenvolver**
@@ -16,13 +27,17 @@ Medição da intensidade do som utilizando o sensor
 - integração do ARDUINO com o PROCESSING;
 
 **Referências**
+[Noise levels](https://hearinghealthfoundation.org/decibel-levels)
 [Acerca do som](https://fonologia.org/fonetica-acustica-o-som/);
 [Openstax](https://openstax.org/books/physics/pages/14-2-sound-intensity-and-sound-level);
 [Sound Intensity](https://en.wikipedia.org/wiki/Sound_intensity);
 [Hyperphysics](http://hyperphysics.phy-astr.gsu.edu/hbase/Sound/intens.html);
 
 
-
+**Glossário**
+Intendidade do Som - 
+Nível Sonoro - 
+Monitor serie - 
 
 `Código ARDUINO`
 
