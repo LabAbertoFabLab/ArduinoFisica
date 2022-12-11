@@ -1,4 +1,5 @@
-Sumário: Medição da velocidade do som utilizando o sensor
+**Sumário**
+Medição da velocidade do som utilizando um sonar
 
 Objetivos:
 - Utilização de um sonar;
@@ -7,19 +8,30 @@ Objetivos:
 - Calcular a velocidade do Som
 - Componentes de programação do ARDUINO
 
+**Procedimento**
+- Abrir o ARDUINO IDE;
+- Conectar o USB A/B ao arduino;
+- Abrir o "monitor serie" e analisar os dados;
+- Calcular a velocidade do som;
+- Testar e comparar com os vlaores tipicos da primeira referência;
+
 Outras ideias para desenvolver:
 
 - Identificar as linitações do sensor 
 - Comentar o código: descrever cada linha de código
 - integração do ARDUINO com o PROCESSING;
+- Usar o sensor de temperatura e a fórmula que inclui esta grandeza.
 
 Material:
-
+- 
 
 Referências:
-- Bblioteca HC-SR04 de (???)
+- [Velocidade do som](https://en.wikipedia.org/wiki/Speed_of_sound)
+- Biblioteca HC-SR04 de (???)
 
+**Glossário**
+Velocidade do som - 
 
-Código ARDUINO:
+`Código ARDUINO`
 
-Código PROCESSING:
+`Código PROCESSING`
