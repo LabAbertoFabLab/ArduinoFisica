@@ -1,5 +1,5 @@
 **Sumário** 
-Medição da intensidade do som utilizando o sensor
+Medição da intensidade do som utilizando o SONAR HC-SR04
 
 **Objetivos**
 - Utilização do sensor de som;
@@ -8,6 +8,7 @@ Medição da intensidade do som utilizando o sensor
 - Componentes de programação do ARDUINO
 
 **Procedimento**
+- Listar o material
 - Abrir o ARDUINO IDE;
 - Conectar o USB A/B ao arduino;
 - Abrir o "monitor serie" e analisar os dados;
@@ -21,7 +22,6 @@ Medição da intensidade do som utilizando o sensor
 
 
 **Outras ideias para desenvolver**
-
 - Calibrar o sensor 
 - Comentar o código: descrever cada linha de código
 - integração do ARDUINO com o PROCESSING;
@@ -37,7 +37,8 @@ Medição da intensidade do som utilizando o sensor
 **Glossário**
 Intendidade do Som - 
 Nível Sonoro - 
-Monitor serie - 
+Monitor serie -
+Plotter serie - 
 
 `Código ARDUINO`
 
