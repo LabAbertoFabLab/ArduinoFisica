@@ -1,8 +1,8 @@
-# **Sumário:** 
+**Sumário** 
 Esta actividade usa o PROCESSING para efeitos de vizualização e o ARDUINO para utilização do potenciómetro/sensor de luz no controlo de um quadro no ecrã. 
 Esse quadrado ao coincidir com as outras peças, que caiem na vertical, geram um ponto. 
 
-**Objetivos:**
+**Objetivos**
 - Utilização de um potenciómetro e de um sensor de luz: leitura de um pino analógico;
 - Leitura e escrita de dados na porta serial;
 - integração do ARDUINO com o PROCESSING;
@@ -15,13 +15,15 @@ Esse quadrado ao coincidir com as outras peças, que caiem na vertical, geram um
 - Rodar o potenciometro na placa SEEED e jogar;
 - DOCUMENTAR: útil em sala de aula? Se sim, como poderia ser aplicado? Que problemas se identificam? Alterações a propôr? 
 
-Análise do Código
+**Análise do Código**
+- Identificar as três componentes principais no código do ARDUINO IDE;
+- Comparar o ARDUINO IDE com o PROCESSING;
 - Para vizualizar os dados do potenciometro, desligar o SKETCH do PROCESSING;
 - Dentro do ARDUINO IDE abrir o "MONITOR SERIE";
 - no botão dentro da janela no canto superior direito ou através do MENU, clicar em "MONITOR SERIE";
 - Rodar o potenciometro e correlacionar com os dados no MONITOR SERIE.
 
-**Outras ideias possíveis:**
+**Outras ideias possíveis**
 
 - Comentar o código: descrever cada linha de código
 - Discutir a aceleração a atribuir a cada peça
@@ -30,15 +32,17 @@ Análise do Código
 - Alterar o formato da barra
 - Integrar no processing, para as barras que não forem apanhadas, os pontos que forem perdidos, implica barras que saltitam em movimentos parabólicos
 
-**Código ARDUINO:**
+**Código ARDUINO**
 
-**Código PROCESSING:**
+**Código PROCESSING**
 
-**Glossário:**
+**Glossário**
 ARDUNINO IDE - A IDE (Arduino Integrated Development Environment - Arduino Software (IDE)) do Arduino é um software de programação em ambiente de desenvolvimento integrado.
 
-**Referências:**
+**Referências**
 
 Exemplos processing: [MOTION](https://processing.org/examples)
 Exemplos ARDUINO KIT SEEED: [LIGHT ou POTENCIOMETER](https://sensorkit.arduino.cc/)
 [Simulação de movimentos de projecteis](https://phet.colorado.edu/pt_BR/simulations/projectile-motion)
+[Walter Fendt, movimento de projeteis](https://www.walter-fendt.de/html5/phpt/projectile_pt.htm)
+[Simulação queda livre](http://sahyun.net/physics/html5/NGPET_freefall/)
