@@ -1,4 +1,5 @@
-**Sumário:** esta actividade usa o PROCESSING para efeitos de vizualização e o ARDUINO para utilização do potenciómetro/sensor de luz no controlo de um quadro no ecrã. 
+# **Sumário:** 
+Esta actividade usa o PROCESSING para efeitos de vizualização e o ARDUINO para utilização do potenciómetro/sensor de luz no controlo de um quadro no ecrã. 
 Esse quadrado ao coincidir com as outras peças, que caiem na vertical, geram um ponto. 
 
 **Objetivos:**
@@ -12,14 +13,13 @@ Esse quadrado ao coincidir com as outras peças, que caiem na vertical, geram um
 - Abrir o PROCESSING;
 - Carregar no botão "PLAY" (executar) ou no MENU -> SKETCH -> clicar em EXECUTAR;
 - Rodar o potenciometro na placa SEEED e jogar;
+- DOCUMENTAR: útil em sala de aula? Se sim, como poderia ser aplicado? Que problemas se identificam? Alterações a propôr? 
 
 Análise do Código
 - Para vizualizar os dados do potenciometro, desligar o SKETCH do PROCESSING;
 - Dentro do ARDUINO IDE abrir o "MONITOR SERIE";
 - no botão dentro da janela no canto superior direito ou através do MENU, clicar em "MONITOR SERIE";
 - Rodar o potenciometro e correlacionar com os dados no MONITOR SERIE.
-
-
 
 **Outras ideias possíveis:**
 
