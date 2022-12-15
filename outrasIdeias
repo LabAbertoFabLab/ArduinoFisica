@@ -1,8 +1,3 @@
-Sumário: calculo da potência de um painel solar com recurso a um gráfico V/I
-
-Objetivos:
-- Explorar o KIT de sensores SEEED e outros sensores externos
-
 Outras ideias para desenvolver:
 
 - medição do tempo de queda com sensores de infravermelhos
@@ -15,5 +10,6 @@ Outras ideias para desenvolver:
 - Um ecrã pode ser um painel solar?
 - Constante de planck
 - Pêndulo com um sensor magnético (Walter Fendt)
+- Integrar sensor de precipitação, anemómetro na estação meteo
 
 Referências:
