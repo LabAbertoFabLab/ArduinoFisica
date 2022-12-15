@@ -1,7 +1,7 @@
 Sumário: utilizar o KIT SEED como uma estação rudimentar: pressão, temperatura e humidade
 
 Objetivos:
-- Utilização do sensor de humidade, temperatura e pressão
+- Utilização do sensor de luz, humidade, temperatura e pressão
 - Relacionar a diferença de pressão com o estado do tempo
 - Utilizar o ecrã OLED
 - Calibrar os sensores
@@ -18,7 +18,7 @@ Material:
 
 
 Referências:
-
+wikifactory Lab Aberto Fab Lab
 
 
 Código ARDUINO:
