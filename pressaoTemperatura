@@ -1,7 +1,8 @@
 **Sumário**
-este projeto consiste na construção de um sensor de Ultra Violeta (UV) e um segmento de display com o índice UV
+Este projeto consiste na u sensor BMP280 usando a bliblioteca da ADAFRUIT
 
 **Objetivos**
+- Udsar biblioteca
 - Utilização do sensor de pressão e temperatura;
 - Calibrar o sensor usando os dados do IPMA
 - Leitura de um pino analógico;
