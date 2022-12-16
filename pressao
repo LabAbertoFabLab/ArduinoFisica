@@ -1,0 +1,40 @@
+**Sumário**
+este projeto consiste na construção de um sensor de Ultra Violeta (UV) e um segmento de display com o índice UV
+
+**Objetivos**
+- Utilização do sensor de pressão e temperatura;
+- Calibrar o sensor usando os dados do IPMA
+- Leitura de um pino analógico;
+- Componentes de programação do ARDUINO
+
+**Procedimento**
+- Listar o material
+- Abrir o ARDUINO IDE;
+- Conectar o USB A/B ao arduino;
+- Abrir o "monitor serie" e analisar os dados;
+- Abrir o "Plotter Serie" e analisar o comportamento do sensor;
+- Testar e comparar com sons tipicos da primeira referência: ajustar valores no código;
+
+**Análise do Código**
+- Identificar as três componentes principais no código do ARDUINO IDE: procurar o inicio e fim das chavetas;
+- Identificar a função de comunicação com o computador;
+- Identificar o pino a que está conectado o sensor de som;
+
+
+**Outras ideias para desenvolver**
+- Calibrar o sensor 
+- Comentar o código: descrever cada linha de código
+- integração do ARDUINO com o PROCESSING;
+
+
+**Glossário**
+Pressão -  
+
+Material
+
+**Referências** 
+[BMP 280](https://www.filipeflop.com/produto/sensor-de-pressao-e-temperatura-bmp280/)
+
+`Código ARDUINO`
+
+`Código PROCESSING`
