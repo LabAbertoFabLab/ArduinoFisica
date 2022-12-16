@@ -1,8 +1,44 @@
-Sumário: este projeto consiste na construção de um sensor de Ultra Violeta (UV) e um segmento de display com o índice UV
+**Sumário**
+este projeto consiste na construção de um sensor de Ultra Violeta (UV) e um segmento de display com o índice UV
+
+**Objetivos**
+- Utilização do sensor de UV e umsegmento de display;
+- Calibrar o sensor usando os dados do Ipma
+- Usar umas escala mais curta de 5 categorias
+- Leitura de um pino analógico;
+- Componentes de programação do ARDUINO
+
+**Procedimento**
+- Listar o material
+- Abrir o ARDUINO IDE;
+- Conectar o USB A/B ao arduino;
+- Abrir o "monitor serie" e analisar os dados;
+- Abrir o "Plotter Serie" e analisar o comportamento do sensor;
+- Testar e comparar com sons tipicos da primeira referência: ajustar valores no código;
+
+**Análise do Código**
+- Identificar as três componentes principais no código do ARDUINO IDE: procurar o inicio e fim das chavetas;
+- Identificar a função de comunicação com o computador;
+- Identificar o pino a que está conectado o sensor de som;
+
+
+**Outras ideias para desenvolver**
+- Calibrar o sensor 
+- Comentar o código: descrever cada linha de código
+- integração do ARDUINO com o PROCESSING;
+
+
+**Glossário**
+Indice UV -  
 
 Material
 
-Referências: 
+**Referências** 
 [Indice UV Ipma](https://www.ipma.pt/pt/enciclopedia/amb.atmosfera/uv/index.html)
 [UVM30A UV Sensor](https://electropeak.com/learn/interfacing-uvm30a-uv-light-sensor-module-with-arduino/)
 [Display de segmento](https://create.arduino.cc/projecthub/aboda243/get-started-with-seven-segment-c73200)
+
+`Código ARDUINO`
+
+`Código PROCESSING`
+
