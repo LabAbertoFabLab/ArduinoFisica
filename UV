@@ -1,0 +1,8 @@
+Sumário: este projeto consiste na construção de um sensor de Ultra Violeta (UV) e um segmento de display com o índice UV
+
+Material
+
+Referências: 
+[Indice UV Ipma](https://www.ipma.pt/pt/enciclopedia/amb.atmosfera/uv/index.html)
+[UVM30A UV Sensor](https://electropeak.com/learn/interfacing-uvm30a-uv-light-sensor-module-with-arduino/)
+[Display de segmento](https://create.arduino.cc/projecthub/aboda243/get-started-with-seven-segment-c73200)
