@@ -36,6 +36,7 @@ Material
 **Referências** 
 [Indice UV Ipma](https://www.ipma.pt/pt/enciclopedia/amb.atmosfera/uv/index.html)
 [UVM30A UV Sensor](https://electropeak.com/learn/interfacing-uvm30a-uv-light-sensor-module-with-arduino/)
+[mais acerca dos sensor UVM30A UV Sensor](https://www.electronics-lab.com/project/arduino-uv-meter-using-uv30a-ultraviolet-sensor/)
 [Display de segmento](https://create.arduino.cc/projecthub/aboda243/get-started-with-seven-segment-c73200)
 
 `Código ARDUINO`
