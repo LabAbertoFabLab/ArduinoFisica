@@ -23,6 +23,7 @@ este projeto consiste na construção de um sensor de Ultra Violeta (UV) e um se
 
 **Outras ideias para desenvolver**
 - Calibrar o sensor 
+- Medir altitude
 - Comentar o código: descrever cada linha de código
 - integração do ARDUINO com o PROCESSING;
 
