@@ -32,4 +32,49 @@ Referências:
 
 Código ARDUINO:
 
+´
+//if you are in BT mode shearch for the serial com number
+int led = 6;
+int light_sensor = A3;
+int potentiometer = A0; //Assign to pin A0
+boolean triger = true;
+
+void setup() {
+Serial.begin(9600); //begin Serial Communication
+pinMode(potentiometer, INPUT); //Sets the pinmode to input
+ pinMode(led, OUTPUT);
+ digitalWrite(led,LOW);
+}
+ 
+void loop() {
+  int sensor_value = analogRead(potentiometer); //Read the value from the potentiometer connected to the A0 pin
+  int raw_light = analogRead(light_sensor); // read the raw value from light_sensor pin (A3) 
+  delay(5);
+  int light = map(raw_light, 0, 1023, 0, 100); // map the value from 0, 1023 to 0, 100
+  int pot = map(sensor_value, 0, 1023, 0, 100); // map the value from 0, 1023 to 0, 100
+
+if (light < pot){
+  digitalWrite(led,LOW);
+  triger=true;
+  
+}
+  
+  if (light > pot && triger) {
+    long unsigned instante = millis();  
+    Serial.println(instante);//desactivate this if you want to mesaure the pot and light sensor
+    digitalWrite(led,HIGH);
+    triger = false;
+    delay(20);
+  }
+
+
+
+  //activate these comments if you want to measure the light sensor and the potentiometer
+ //Serial.print(raw_light); // print the light value in Serial Monitor
+ //Serial.print(" ");
+//Serial.println(sensor_value);
+  delay(1); // add a delay to only read and print every 1 second
+}
+`
+
 Código PROCESSING:
