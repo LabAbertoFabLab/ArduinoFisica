@@ -3,19 +3,18 @@ Sumário:gráfico x/t com recurso ao sensor de luz
 Objetivos:
 - Medição de posições e instantes;
 - Utilização do sensor de luz;
-- Calibrar o sensor
+- Calibrar o sensor;
+- Utilizar um pin digital como "OUTPUT";
 - Leitura de um pino analógico;
-- Componentes de programação do ARDUINO
+- Componentes de programação do ARDUINO.
 
 Outras ideias para desenvolver:
 
-- Calibrar o sensor 
-- Comentar o código: descrever cada linha de código
+- Desenvolver um protocolo de utilização em sala de aula;
+- Comentar o código: descrever cada linha de código:
 - integração do ARDUINO com o PROCESSING;
 
 Referências:
-
-
 
 Código ARDUINO:
 
