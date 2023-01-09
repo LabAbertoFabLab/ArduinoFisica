@@ -11,8 +11,9 @@ Esse quadrado ao coincidir com as outras peças, que caiem na vertical, geram um
 - CONECTAR o ARDUINO ligado ao KIT SEEED com o cabo USB A/B;
 - Abrir o ARDUINO IDE;
 - Abrir o PROCESSING;
-- Carregar no botão "PLAY" (executar) ou no MENU -> SKETCH -> clicar em EXECUTAR;
+- Na janela do PROCESSING, carregar no botão "PLAY" (executar) ou no MENU -> SKETCH -> clicar em EXECUTAR;
 - Rodar o potenciometro na placa SEEED e jogar;
+- OLED: observar valores;
 - DOCUMENTAR: útil em sala de aula? Se sim, como poderia ser aplicado? Que problemas se identificam? Alterações a propôr? 
 
 **Análise do Código**
@@ -21,7 +22,8 @@ Esse quadrado ao coincidir com as outras peças, que caiem na vertical, geram um
 - Para vizualizar os dados do potenciometro, desligar o SKETCH do PROCESSING;
 - Dentro do ARDUINO IDE abrir o "MONITOR SERIE";
 - no botão dentro da janela no canto superior direito ou através do MENU, clicar em "MONITOR SERIE";
-- Rodar o potenciometro e correlacionar com os dados no MONITOR SERIE.
+- Rodar o potenciometro e correlacionar com os dados no MONITOR SERIE;
+- O que se poderia alterar no jogo no ambiente do PROCESSING?
 
 **Outras ideias possíveis**
 
@@ -33,8 +35,144 @@ Esse quadrado ao coincidir com as outras peças, que caiem na vertical, geram um
 - Integrar no processing, para as barras que não forem apanhadas, os pontos que forem perdidos, implica barras que saltitam em movimentos parabólicos
 
 `Código ARDUINO`
+´
+
+// adapted by António Gonçalves AUGUST 2022, to use along with serial
+// /*communication ARDUINO with PROCESSING
+// from Combined Demo by Marc MERLIN <marc_soft@merlins.org>
+// Reviewed by Pablo Marquínez  <p.marquinez@arduino.cc>
+// This demo uses all the devices from the Arduino Sensor Kit
+// Showing the values on the Display
+
+#include "Arduino_SensorKit.h"
+
+
+#define POT A0 //variável para o sensor potenciómetro
+#define LIGHT A3 //variável para o sensor luz
+
+int pot_value;//variáveis para os valores associados à leitura de cada um dos sensores
+int light_value;
+
+void setup() {
+  Serial.begin(9600);
+  pinMode(LIGHT , INPUT);//não é necessaŕio porque este pino é analógico, logo, INPUT
+
+//OLED
+  Environment.begin();
+  Oled.begin();
+  Oled.setFlipMode(true);
+}
+
+void loop() {
+  pot_value = analogRead(POT);//leitura
+  delay(1);
+  light_value = analogRead(LIGHT);//leitura
+  delay(1);
+
+//OLED
+  Oled.setFont(u8x8_font_amstrad_cpc_extended_r);
+  Oled.setCursor(0, 1);
+  Oled.print("Pot: ");
+  Oled.print(pot_value);
+  Oled.print("V  ");
+  
+  Oled.setCursor(0, 3);
+  Oled.print("Light: ");
+  Oled.print(light_value);
+  Oled.print("   ");
+
+  Serial.print(pot_value);
+  Serial.print(" , ");
+  Serial.println(light_value);
+  delay(50);
+}
+`
+
 
 ´Código PROCESSING`
+`
+
+import processing.serial.*;//bibliotecas
+
+/*
+ Lê duas variaveis da comunicação serial "mySerial", "pot" e "light" para controlar o quadrado do jogo
+ */
+
+Serial mySerial;  // cria um objecto da classe serial
+float pot;      // variavel lida na comunicação serial realtivo ao potenciómetro
+float light;      // variavel lida na comunicação serial realtivo ao potenciómetro
+float veloc = 0;   // velocidade inicial dos quadrados que caiem
+float gravidade = 0.01; //valor ficticio da aceleração gravitica
+float x = 0;   //  coordenada x do quadrado
+float y = 0;     // coordenada y do quadrado
+int pontos = 0; //variavel controlo dos pontos alcançados pelo jogador
+
+PFont f; // definição da variavel tipo de letra
+
+void setup(){
+  background(255);//cor do fundo
+  size(400, 700);//tamanho em pixel
+  printArray(Serial.list());//mostra a lista de comunicações serial disponível
+  mySerial = new Serial(this, Serial.list()[1], 9600);//escolha da comunicação na lista
+  mySerial.bufferUntil('\n');//lê até aparecer um "return" identificado por \n
+  // Criar a fonte
+  f = createFont("Arial", 16);
+
+//se quisermos usar som
+//file = new SoundFile(this,"congrats.wav");
+
+}
+
+void draw(){
+  background(255); //cor fundo
+  fill(100); //cor preenchimento do quadrado
+  rect(pot, height-20, 10, 10);//quadrado que se move em funcao do valor do pot ou light
+   //println(pot," , ",light);
+   if (y>height) {
+     veloc =0;
+   x = random(0, width);;   // coordenada x do quadrado que cai
+   y = 0; //random(0, width);     // coordenada y do quadrado que cai, sempre igual a zero
+   fill(175); //cor do quadrado do jogador
+  stroke(0);//sem linha
+
+  rect(x, y, 10, 10); //posição e tamanho do quadrado do jogador
+   }
+   if (y<height){
+   // Apresenta o quadrado a cair
+  // adiciona o valor da gravidade.
+  veloc = veloc + gravidade;
+  // aumenta a velocidade.
+  y = y + veloc;
+  stroke(0);
+  rectMode(CENTER);
+  rect(x, y, 10, 10);
+  if ( x >= pot-10 && x<=pot+10 && y >= height-20-2 && y <=height-20+2){//condição de coincidência para que ganhe um ponto
+   int ponto = 1;
+   pontos = pontos + ponto;//soma os pontos
+   fill(255, 0, 0);
+   ellipse(pot, height-20, 40, 40);
+   delay(100);
+   //file.play();//som
+  }
+  textFont(f, 16); // fonte da letra
+  fill(0);         // cor
+  // Apresenta o texto
+  text (pontos, height/2,width/2); //escrever no ecrã o número de pontos alcançado pelo jogador
+}
+delay(5);
+}
+
+void serialEvent (Serial mySerial){//leitura daas variáveis na comunicação serial
+    String input = mySerial.readString();         
+    String[] numbers = split(input,','); //split
+    float[] values = float(numbers);
+    
+    pot = map(values[0],0,1023,0,width);// conversão 
+    //light =map(values[1],0,300,0,height);
+}
+
+´
+
 
 **Glossário**
 ARDUNINO IDE - A IDE (Arduino Integrated Development Environment - Arduino Software (IDE)) do Arduino é um software de programação em ambiente de desenvolvimento integrado.
