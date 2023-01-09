@@ -1,5 +1,5 @@
 **Sumário** 
-Medição da intensidade do som utilizando o SONAR HC-SR04
+Medição da intensidade do som utilizando o sensor de som do SEEED KIT
 
 **Objetivos**
 - Utilização do sensor de som;
@@ -9,11 +9,12 @@ Medição da intensidade do som utilizando o SONAR HC-SR04
 
 **Procedimento**
 - Listar o material
-- Abrir o ARDUINO IDE;
-- Conectar o USB A/B ao arduino;
+- Abrir o ARDUINO IDE na Pasta ARDUINO FSICA;
+- Conectar o USB A/B do arduino ao RASPI;
+- Observar os dados no monitor OLED da placa de sensores;
 - Abrir o "monitor serie" e analisar os dados;
 - Abrir o "Plotter Serie" e analisar o comportamento do sensor;
-- Testar e comparar com sons tipicos da primeira referência: ajustar valores no código;
+- Testar e comparar com sons tipicos da primeira referência: ajustar valores no código (ganho de 26 dB no logaritmo no código);
 
 **Análise do Código**
 - Identificar as três componentes principais no código do ARDUINO IDE: procurar o inicio e fim das chavetas;
@@ -22,7 +23,8 @@ Medição da intensidade do som utilizando o SONAR HC-SR04
 
 
 **Outras ideias para desenvolver**
-- Calibrar o sensor 
+- Calibrar o sensor;
+- Estudar o calculo do ganho da fórmula do logaritmo (usar as referências);
 - Comentar o código: descrever cada linha de código
 - integração do ARDUINO com o PROCESSING;
 
@@ -41,5 +43,45 @@ Monitor serie -
 Plotter serie - 
 
 `Código ARDUINO`
+`
+//Intensidade do som com log
+//Bibliotecas necessárias
+#include "Arduino_SensorKit.h"
+
+//Variáveis e pinos
+int sensor_som = A2; //assign to pin A2
+int i;
+
+void setup() 
+{
+  Serial.begin(9600); //iniciar a comunicação serial
+  
+  Oled.begin();//Inicialização do OLED
+  Oled.setFlipMode(true); // Rotação do ecrã
+}
+ 
+void loop()
+{
+ long somValor = 0; //variável local para diversas medições
+  for (i = 0; i < 3000; i++) //criar um loop que soma o valor absoluto ed 3000 medições 
+  { somValor += abs(analogRead(sensor_som));  } //leitura do sensor e soma do valor absoluto
+ 
+  somValor = 2*somValor/i;// media dos valores medidos
+  somValor = map(somValor,0,512,0,140);//conversão de escalas
+Serial.println(somValor); //imprimir o valor da intensidade do som
+ 
+  somValor = 20*log(somValor/26  );//calibração, racio Sound Noise, ganho do sensor 26 dB(fonte: site grove) 
+  Serial.println(somValor); //imprimir o valor da intensidade do som
+ 
+ //OLED
+  Oled.setFont(u8x8_font_chroma48medium8_r); 
+  Oled.setCursor(0, 33);    // Coordenadas do OLED 
+  Oled.print("I = ");   
+  Oled.print(somValor); // Mostrar o valor no ecrã OLED 
+  Oled.print(" dB"); 
+  Oled.refreshDisplay();    // Actualizar o ecrã OLED 
+  delay(10); //espera
+}
+´
 
 `Código PROCESSING`
