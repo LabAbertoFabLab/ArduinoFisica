@@ -6,11 +6,13 @@ Objetivos:
 - Utilizar o ecrã OLED
 - Calibrar os sensores
 - Leitura de um pino analógico;
-- Componentes de programação do ARDUINO
+- Componentes de programação do ARDUINO;
 
 Outras ideias para desenvolver:
 
-- Calibrar o sensor 
+- Calibrar os sensores
+- Protocolo de utilização em sala de aula;
+- Acrescentar sensores relacioandos com uma estação meteo;
 - Comentar o código: descrever cada linha de código
 - integração do ARDUINO com o PROCESSING;
 
@@ -18,9 +20,83 @@ Material:
 
 
 Referências:
-wikifactory Lab Aberto Fab Lab
+[wikifactory Lab Aberto Fab Lab](https://wikifactory.com/+lababertoknowledgebase/arduino)
 
 
-Código ARDUINO:
+Código ARDUINO
+ ´
+ #include "Arduino_SensorKit.h"
+/*
+19JUN21 - LabAberto: A linha abaixo permite resolver o problema de 
+                     utilização simultânea de vários componentes que usam i2c,
+                     como por exemplo o OLED e os sensores de pressão e/ou acelerómetro
+*/
+U8X8_SSD1306_128X64_NONAME_HW_I2C Oled2; //Cria um objecto de ecrã 'Oled2' alternativo ao original 'OLED'
+float pressure; //criar variável para guardar o valor medido de pressão
+//Configuração inicial. (Executa UMA vez, apenas no início) 
+void setup() {
+  Serial.begin(9600); // Inicializar a comunicação série entre o Arduino e o Computador 
+  Oled2.begin(); //Inicializar o ecrã OLED
+  Oled2.setFlipMode(true); //Definir a orientação do ecrã: True = horizontal
+  Oled2.setFont(u8x8_font_7x14B_1x2_r);
+  Pressure.begin(); //Inicializar o sensor de pressão
+}
+
+//Código executado/repetido em ciclo infinito
+void loop() {
+  //OLED 
+  Oled2.setFont(u8x8_font_chroma48medium8_r); //Definir a fonte de texto
+  
+  int luz_val = analogRead(A3);   //medir o valor analógico de tensão na porta A3 (sensor de luz)
+  Oled2.setCursor(0, 0);    // coordenada (x,y) da frase seguinte
+  Oled2.print("Luz Val:");   
+  Oled2.print(luz_val); // Mostrar o valor
+  
+  float temp = Pressure.readTemperature(); //usamos 'float' porque o valor de temperatura não é inteiro
+  Oled2.setCursor(0, 10);
+  Oled2.print("Temp:");
+  Oled2.print(temp);
+  Oled2.print("C");
+  
+  float pres = 9.87*Pressure.readPressure()/1000000; //usamos 'float' porque o valor de pressão não é inteiro
+  Oled2.setCursor(0, 20);
+  Oled2.print("Press:");
+  Oled2.print(pres);
+  Oled2.print("atm"); 
+  
+  float alt = Pressure.readAltitude(); //usamos 'float' porque o valor de altitude não é inteiro
+  Oled2.setCursor(0, 30);
+  Oled2.print("Alt:");
+  Oled2.print(alt);
+  Oled2.print("m"); 
+  
+  Oled2.refreshDisplay();    // Refrescar o ecrã OLED
+  
+  //Serial monitor - Imprimir os mesmos valores no Serial Monitor
+  // (Não esquecer ir a 'Tools>Serial Monitor' durante a execução para ver os parâmetros no ecrã do PC)
+  Serial.print("Luz Val:");   
+  Serial.print(luz_val);
+  Serial.println(); //salta a impressão para a linha seguinte
+  
+  Serial.print("Temp:");
+  Serial.print(temp);
+  Serial.print("C");
+  Serial.println();
+  
+  Serial.print("Press:");
+  Serial.print(pres);
+  Serial.print("atm");
+  Serial.println(); 
+  
+  Serial.print("Alt:");
+  Serial.print(alt);
+  Serial.print("m");
+  Serial.println(); 
+  Serial.println(); //imprime uma linha adicional entre ciclos de repetições das medições
+  
+  delay(5*60*1000); //esperar x milisegs antes de continuar: 5*60*1000 = 300s = 5 minutos entre medições
+  
+}
+ `
 
 Código PROCESSING:
