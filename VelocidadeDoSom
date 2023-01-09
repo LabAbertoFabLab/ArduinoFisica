@@ -2,7 +2,7 @@
 Medição da velocidade do som utilizando um sonar
 
 Objetivos:
-- Utilização de um sonar;
+- Utilização de um sonar, HCS-04;
 - Calibrar o sensor
 - Echo e trigger;
 - Calcular a velocidade do Som
@@ -11,13 +11,16 @@ Objetivos:
 **Procedimento**
 - Abrir o ARDUINO IDE;
 - Conectar o USB A/B ao arduino;
+- Colocar a placa de madeira a 50 cm do sonar;
+- Enviar o código;
 - Abrir o "monitor serie" e analisar os dados;
 - Calcular a velocidade do som;
 - Testar e comparar com os vlaores tipicos da primeira referência;
 
 Outras ideias para desenvolver:
 
-- Identificar as linitações do sensor 
+- Identificar as linitações do sensor;
+- Procedimento apra utilziação em sala de aula;
 - Comentar o código: descrever cada linha de código
 - integração do ARDUINO com o PROCESSING;
 - Usar o sensor de temperatura e a fórmula que inclui esta grandeza.
@@ -33,5 +36,34 @@ Referências:
 Velocidade do som - 
 
 `Código ARDUINO`
+
+´
+//baseado nesta biblioteca http://reference.arduino.cc/reference/en/libraries/hc-sr04/
+
+#include <HCSR04.h>
+
+byte triggerPin = 8;
+byte echoCount = 1;
+byte* echoPins = new byte[echoCount] {2};
+
+void setup () {
+  Serial.begin(9600);
+  HCSR04.begin(triggerPin, echoPins, echoCount);
+}
+
+void loop () {
+  long* times = HCSR04.measureMicroseconds();
+  
+  for (int i = 0; i < echoCount; i++) {
+    Serial.print(i + 1);
+    Serial.print(": ");
+    Serial.print(times[i]);
+    Serial.println(" μs");
+  }
+  
+  Serial.println("---");
+  delay(250);
+}`
+
 
 `Código PROCESSING`
