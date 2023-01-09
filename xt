@@ -8,7 +8,19 @@ Objetivos:
 - Leitura de um pino analógico;
 - Componentes de programação do ARDUINO.
 
-
+**Procedimento**
+- Listar o material
+- ligar o conector das baterias ao ARDUINO;
+- Conectar o BT;
+- Abrir o ARDUINO IDE;
+- abrir o pasta ARDUINO FÍSICA no ambiente de trabalho e escolher o ficheiro ou copiar e colar o programa em baixo para o IDE;
+- Escolher a porta (tentativa e erro);
+- Abrir o "Serie Monitor";
+- Colocar as portas de luz a 50 cm uma das outras;
+- Rodar o potenciómetro pouco depois do LED acender;
+- Lançar o carrinho;
+- Recolher os instantes e analisar os dados numa folha de cálculo;
+- Analizar o código e Documentar.
 
 Outras ideias para desenvolver:
 
