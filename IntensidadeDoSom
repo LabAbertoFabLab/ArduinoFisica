@@ -15,6 +15,8 @@ Medição da intensidade do som utilizando o sensor de som do SEEED KIT
 - Abrir o "monitor serie" e analisar os dados;
 - Abrir o "Plotter Serie" e analisar o comportamento do sensor;
 - Testar e comparar com sons tipicos da primeira referência: ajustar valores no código (ganho de 26 dB no logaritmo no código);
+- DOCUMENTAR: útil em sala de aula? Se sim, como poderia ser aplicado? Que problemas se identificam? Alterações a propôr? 
+
 
 **Análise do Código**
 - Identificar as três componentes principais no código do ARDUINO IDE: procurar o inicio e fim das chavetas;
