@@ -16,10 +16,11 @@ Objetivos:
 - Abrir o "monitor serie" e analisar os dados;
 - Calcular a velocidade do som;
 - Testar e comparar com os vlaores tipicos da primeira referência;
+- documentar: útil em sala de aula? O que deve alterar? Procedimento de utilização?
 
 Outras ideias para desenvolver:
 
-- Identificar as linitações do sensor;
+- Identificar as limitações dos sensores;
 - Procedimento apra utilziação em sala de aula;
 - Comentar o código: descrever cada linha de código
 - integração do ARDUINO com o PROCESSING;
