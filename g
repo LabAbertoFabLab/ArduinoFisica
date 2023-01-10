@@ -19,7 +19,8 @@ Medição da aceleração gravitica
 - Testar em queda livre para dentro da caixa: em que condições poderá funcionar?
 - Abrir o "monitor serie" e analisar os dados numa folha de cálculo;
 - Testar e comparar com valores tipicos da segunda referência: ajustar valores no código;
-- Documentar.
+- DOCUMENTAR: útil em sala de aula? Se sim, como poderia ser aplicado? Que problemas se identificam? Alterações a propôr? 
+
 
 **Outras ideias para desenvolver**
 - Relacionar com a gravidade local;
