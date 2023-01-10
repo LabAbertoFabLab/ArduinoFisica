@@ -15,6 +15,14 @@ Outras ideias para desenvolver:
 - integração do ARDUINO com o PROCESSING;
 - um ecrã de computador pode tornar-se um panel solar?
 
+**Procedimento**
+- Listar o material
+- Abrir o ARDUINO IDE;
+- Abrir o "monitor serie" e analisar os dados numa folha de cálculo;
+- Testar e comparar com valores tipicos medidos com o multimetro: ajustar valores no código;
+- DOCUMENTAR: útil em sala de aula? Se sim, como poderia ser aplicado? Que problemas se identificam? Alterações a propôr? 
+
+
 Material:
 Multimetro
 
