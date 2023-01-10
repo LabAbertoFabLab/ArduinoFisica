@@ -16,6 +16,13 @@ Outras ideias para desenvolver:
 - Comentar o código: descrever cada linha de código
 - integração do ARDUINO com o PROCESSING;
 
+**Procedimento**
+- CONECTAR o ARDUINO ligado ao KIT SEEED com o cabo USB A/B;
+- Abrir o ARDUINO IDE;
+- Analisar valores: aceitáveis?
+- OLED: observar valores;
+- DOCUMENTAR: útil em sala de aula? Se sim, como poderia ser aplicado? Que problemas se identificam? Alterações a propôr? 
+
 Material:
 
 
