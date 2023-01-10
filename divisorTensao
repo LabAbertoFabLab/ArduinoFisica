@@ -1,5 +1,5 @@
 **Sumário** 
-Medição da intensidade do som utilizando o sensor de som do SEEED KIT
+Medição da tensão utilizando um divisor de tensão
 
 **Objetivos**
 - Leitura de um pino analógico;
@@ -23,17 +23,22 @@ Medição da intensidade do som utilizando o sensor de som do SEEED KIT
 **Outras ideias para desenvolver**
 - Calibrar o sensor;
 - Utilizar como voltimetro;
+- usar como sensor de luz;
 - Comentar o código: descrever cada linha de código
 - integração do ARDUINO com o PROCESSING;
+- análise de um pino em estado de floating (https://www.programmingelectronics.com/floating-pins-pull-up-resistors-and-arduino/)
 
 **Referências**
-
+Divisor de tensão:
+Floating: https://www.programmingelectronics.com/floating-pins-pull-up-resistors-and-arduino/
 
 
 **Glossário**
-Intendidade do Som - 
-Nível Sonoro - 
-Monitor serie -
-Plotter serie - 
+divisor de tensão - 
+floating - 
 
 `Código ARDUINO`
+
+´
+
+`
