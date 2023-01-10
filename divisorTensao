@@ -1,1 +1,39 @@
+**Sumário** 
+Medição da intensidade do som utilizando o sensor de som do SEEED KIT
 
+**Objetivos**
+- Leitura de um pino analógico;
+- Componentes de programação do ARDUINO.
+
+**Procedimento**
+- Listar o material
+- Abrir o ARDUINO IDE na Pasta ARDUINO FSICA;
+- Conectar o USB A/B do arduino ao RASPI;
+- Abrir o "monitor serie" e analisar os dados;
+- Testar e comparar com os valores de tensão medidos com o multimetro;
+- DOCUMENTAR: útil em sala de aula? Se sim, como poderia ser aplicado? Que problemas se identificam? Alterações a propôr? 
+
+
+**Análise do Código**
+- Identificar as três componentes principais no código do ARDUINO IDE: procurar o inicio e fim das chavetas;
+- Identificar a função de comunicação com o computador;
+- Identificar o pino a que está conectado divisor de tensão;
+
+
+**Outras ideias para desenvolver**
+- Calibrar o sensor;
+- Utilizar como voltimetro;
+- Comentar o código: descrever cada linha de código
+- integração do ARDUINO com o PROCESSING;
+
+**Referências**
+
+
+
+**Glossário**
+Intendidade do Som - 
+Nível Sonoro - 
+Monitor serie -
+Plotter serie - 
+
+`Código ARDUINO`
