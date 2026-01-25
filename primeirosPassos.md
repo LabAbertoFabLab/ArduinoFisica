@@ -69,7 +69,8 @@ Alimentação da placa BT: voltagem? GND? cores; RX trocado com o TX da placa: R
 Emparelhar
 Conectar/Sincronizar
 
-[!TIP](Atenção emparelhamento: emparelhar distante de outros BT;)
+> [!TIP]
+> Atenção emparelhamento: emparelhar distante de outros BT;
 
 7. Instalar a APP
 Configurar a APP
