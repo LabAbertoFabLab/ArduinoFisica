@@ -49,7 +49,7 @@ void loop() {
       digitalWrite(LED, LOW);
       Serial.println("LED desligado");
     }
-  } else {Serial.println("sem dados disponíveis");}
+  }
 delay (50);
 }
 ```
@@ -61,11 +61,11 @@ Comentar
 5. Conectar o BT ao ARDUINO usando a placa de ensaio
 Alimentação da placa BT: voltagem? GND? cores; RX trocado com o TX da placa: RX TX peculiaridade;
 Emparelhar
-Conectar
+Conectar/Sincronizar
+[!TIP] Atenção emparelhamento: emparelhar distante de outros BT
 
 6. Instalar a APP
 Configurar a APP
-> [!TIP] Atenção emparelhamento: emparelhar distante de outros BT
 
 ## Sistema autoalimentado
 8. Alimentar a Placa arduino com as pilhas/Baterias
