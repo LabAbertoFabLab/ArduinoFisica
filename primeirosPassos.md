@@ -51,7 +51,8 @@ void loop() {
     }
   } else {Serial.println("sem dados disponíveis");}
 delay (50);
-}``
+}
+``
 
 Comentar
 
