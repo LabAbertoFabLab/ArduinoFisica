@@ -101,7 +101,7 @@ Sugestão: controlar por voz
 
 Sugestão: carregar o exemplo ReadAnalogVoltage e testar o sensor ao aproximar a mão ou mesmo tocar-lhe;
 
-10. Isto sugere algum projeto?
+# Isto sugere algum projeto?
     
 
 
