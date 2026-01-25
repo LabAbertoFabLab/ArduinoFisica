@@ -1,5 +1,6 @@
 Sumário:
-> Conjunto de actividades práticas no âmbito da Física com recurso a materiais simples, ao KIT de sensores da SEEED e à programação com o ARDUINO.
+> Conjunto de actividades práticas, no âmbito da Física, com recurso a materiais simples, 
+sensores e atualdores, ao KIT de sensores da SEEED e à programação com o ARDUINO.
 
 # Lista de atividade
 
@@ -13,7 +14,7 @@ Sumário:
 ## Estação Meteorologica
 ## Outras ideias
 
-#Links úteis
+# Links úteis
 KIT: https://wiki.seeedstudio.com/Grove-Beginner-Kit-For-Arduino/ 
 lições: https://sensorkit.arduino.cc/ 
 Lições: https://dronebotworkshop.com/
