@@ -17,7 +17,7 @@ Comentar o código
 
 3. Usar o pino 13 para verificar o controle de um LED
 
-> [!WARNING] o pino 13 é o único em que podes colcoar um led diretamente sem uma resistência em série;
+> [!WARNING](o pino 13 é o único em que podes colcoar um led diretamente sem uma resistência em série;)
 
 # Controlar o LED
 
@@ -68,7 +68,7 @@ Alimentação da placa BT: voltagem? GND? cores; RX trocado com o TX da placa: R
 Emparelhar
 Conectar/Sincronizar
 
-[!TIP] Atenção emparelhamento: emparelhar distante de outros BT
+[!TIP](Atenção emparelhamento: emparelhar distante de outros BT;)
 
 7. Instalar a APP
 Configurar a APP
