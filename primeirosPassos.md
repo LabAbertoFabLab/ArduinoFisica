@@ -56,22 +56,26 @@ delay (50);
 
 Comentar
 
+## Sistema autoalimentado
+5. Alimentar a Placa arduino com as pilhas/Baterias
+
+Sugestão: testar distância
+
 ## Controlar o LED por BT
 
-5. Conectar o BT ao ARDUINO usando a placa de ensaio
+6. Conectar o BT ao ARDUINO usando a placa de ensaio
 Alimentação da placa BT: voltagem? GND? cores; RX trocado com o TX da placa: RX TX peculiaridade;
 Emparelhar
 Conectar/Sincronizar
+
 [!TIP] Atenção emparelhamento: emparelhar distante de outros BT
 
-6. Instalar a APP
+7. Instalar a APP
 Configurar a APP
 
-## Sistema autoalimentado
-8. Alimentar a Placa arduino com as pilhas/Baterias
-Sugestão testar distância
+Sugestão: copntrolar por voz
 
-10. Isto sugere algum projeto?
+8. Isto sugere algum projeto?
 
 
 
