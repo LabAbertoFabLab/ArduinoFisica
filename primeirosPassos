@@ -1,0 +1,10 @@
+## Connectar
+# Abre o software arduino 
+NOTA: instalar aqui: https://support.arduino.cc/hc/en-us/articles/360019833020-Download-and-install-Arduino-IDE)
+# conecta a porta USB B da placa arduino com a porta USB A do teu computador;
+# Abre o exemplo blink: menu: file -> examples -> basics -> blink
+Comentar o código
+Sugestão: alterar o tempo para metade;
+Sugestão: Imitar com som o código morse para May Day, SOS, ...---...: som: https://www.youtube.com/watch?v=N4P05TASXMs
+
+# Controlar o LED embebido na placa arduino
