@@ -1,4 +1,4 @@
-# Connectar
+# Primeira utilização do ARDUINO
 
 > [!WARNING] NOTA IMPORTANTE: desligar a placa arduino da fonte de alimentação sempre que se mexe no circuito
 
@@ -17,7 +17,9 @@ Comentar o código
 
 3. Usar o pino 13 para verificar o controle de um LED
 
-> [!WARNING] NOTA IMPORTANTE: o pino 13 é o único em que podes colcoar um led diretamente sem uma resistência em série;
+> [!WARNING] o pino 13 é o único em que podes colcoar um led diretamente sem uma resistência em série;
+
+# Controlar o LED
 
 4. Controlar o LED embebido na placa arduino, usando o **serial monitor**
 
@@ -52,16 +54,22 @@ delay (50);
 
 Comentar
 
+## Controlar o LED por BT
+
 5. Conectar o BT ao ARDUINO usando a placa de ensaio
-alimentação
-RX TX pecularialidade
+Alimentação da placa BT: voltagem? GND? cores; RX trocado com o TX da placa: RX TX peculiaridade;
 Emparelhar
 Conectar
 
-7. Instalar a APP
-Configurar
-9. Alimentar a Placa arduino
-10.  
+6. Instalar a APP
+Configurar a APP
+> [!TIP] Atenção emparelhamento: emparelhar distante de outros BT
+
+## Sistema autoalimentado
+8. Alimentar a Placa arduino com as pilhas/Baterias
+Sugestão testar distância
+
+10. Isto sugere algum projeto?
 
 
 
