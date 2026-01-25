@@ -1,6 +1,7 @@
 # Primeira utilização do ARDUINO
 
-> [!WARNING] NOTA IMPORTANTE: desligar a placa arduino da fonte de alimentação sempre que se mexe no circuito
+> [!WARNING]
+> NOTA IMPORTANTE: desligar a placa arduino da fonte de alimentação sempre que se mexe no circuito
 
 1. Abre o software arduino 
 
