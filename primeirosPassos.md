@@ -23,7 +23,8 @@ Comentar o código
 
 4. Controlar o LED embebido na placa arduino, usando o **serial monitor**
 
-`const int LED = 13; // Led embebido na placa Arduino
+``
+const int LED = 13; // Led embebido na placa Arduino
 
 void setup() {
   pinMode(LED, OUTPUT);
@@ -50,7 +51,7 @@ void loop() {
     }
   } else {Serial.println("sem dados disponíveis");}
 delay (50);
-}`
+}``
 
 Comentar
 
