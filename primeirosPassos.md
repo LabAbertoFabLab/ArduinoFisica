@@ -92,7 +92,7 @@ Conectar com o BT
 Configurar botões
 Usar terminal e botões
 
-Sugestão: controlar por voz
+Sugestão: controlar por voz e movimento do telefone
 
 9. Desmarcar os comentários no código e carregar o novo código novamente
    
