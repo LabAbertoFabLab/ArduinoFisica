@@ -26,6 +26,8 @@ Comentar o código
 
 ```
 const int LED = 13; // Led embebido na placa Arduino
+//int sensor = A0; // sensor no pino A0
+//int medicao = 0; // medição do sensor
 
 void setup() {
   pinMode(LED, OUTPUT);
@@ -44,12 +46,18 @@ void loop() {
 
     if (comando == '1') {
       digitalWrite(LED, HIGH);
+      // medir
+      medicao = analogRead(sensor);
       Serial.println("LED ligado");
+      //Serial.println(medicao);
+      
     } 
     else if (comando == '0') {
       digitalWrite(LED, LOW);
       Serial.println("LED desligado");
     }
+    else {
+      Serial.println("nota: Envia '1' para acender o LED e '0' para apagar");}
   }
 delay (50);
 }
@@ -75,9 +83,17 @@ Conectar/Sincronizar
 7. Instalar a APP
 Configurar a APP
 
-Sugestão: copntrolar por voz
+Sugestão: controlar por voz
 
-8. Isto sugere algum projeto?
+8. Desmarcar os comentários no código e carregar o novo código novamente
+   
+> [!TIP]
+> No momento de enviar o novo código, desligar a placa BT;  
+
+Sugestão: carregar o exemplo ReadAnalogVoltage e testar o sensor ao aproximar a mão ou mesmo tocar-lhe;
+
+10. Isto sugere algum projeto?
+    
 
 
 
