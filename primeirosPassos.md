@@ -16,18 +16,20 @@ Comentar o código
 > Sugestão: alterar o tempo para metade;
 > Sugestão: Imitar com som o código morse para May Day, SOS, ...---...: som: https://www.youtube.com/watch?v=N4P05TASXMs
 
-3. Usar o pino 13 para verificar o controle de um LED
+Sugestão: usar o pino 13 para verificar o controle de um LED
 
-> [!WARNING](o pino 13 é o único em que podes colcoar um led diretamente sem uma resistência em série;)
+> [!WARNING]
+> o pino 13 é o único em que podes colocar um led diretamente sem uma resistência em série;
 
 # Controlar o LED
 
-4. Controlar o LED embebido na placa arduino, usando o **serial monitor**
+3. Controlar o LED embebido na placa arduino, usando o **serial monitor**
+4. Carregar este programa:
 
 ```
 const int LED = 13; // Led embebido na placa Arduino
-//int sensor = A0; // sensor no pino A0
-//int medicao = 0; // medição do sensor
+int sensor = A0; // sensor no pino A0
+int medicao = 0; // medição do sensor
 
 void setup() {
   pinMode(LED, OUTPUT);
@@ -49,7 +51,7 @@ void loop() {
       // medir
       medicao = analogRead(sensor);
       Serial.println("LED ligado");
-      //Serial.println(medicao);
+      Serial.println(medicao);
       
     } 
     else if (comando == '0') {
@@ -63,16 +65,21 @@ delay (50);
 }
 ```
 
+5. Testar os valores = e 1 no **serial monitor**
+
 Comentar
 
 ## Sistema autoalimentado
-5. Alimentar a Placa arduino com as pilhas/Baterias
+6. Alimentar a Placa arduino com as pilhas/Baterias e verificar se a luz verde acende
 
 Sugestão: testar distância
 
 ## Controlar o LED por BT
 
-6. Conectar o BT ao ARDUINO usando a placa de ensaio
+7. Desligar a alimentação da pilha e Conectar o BT ao ARDUINO usando a placa de ensaio
+
+Colocar foto aqui!?!?!?
+
 Alimentação da placa BT: voltagem? GND? cores; RX trocado com o TX da placa: RX TX peculiaridade;
 Emparelhar
 Conectar/Sincronizar
@@ -80,12 +87,14 @@ Conectar/Sincronizar
 > [!TIP]
 > Atenção emparelhamento: emparelhar distante de outros BT;
 
-7. Instalar a APP
-Configurar a APP
+8. Instalar e Configurar a APP
+Conectar com o BT
+Configurar botões
+Usar terminal e botões
 
 Sugestão: controlar por voz
 
-8. Desmarcar os comentários no código e carregar o novo código novamente
+9. Desmarcar os comentários no código e carregar o novo código novamente
    
 > [!TIP]
 > No momento de enviar o novo código, desligar a placa BT;  
