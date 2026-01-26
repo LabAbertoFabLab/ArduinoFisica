@@ -16,7 +16,8 @@ Comentar o código
 > Sugestão: alterar o tempo para metade;
 > Sugestão: Imitar com som o código morse para May Day, SOS, ...---...: som: https://www.youtube.com/watch?v=N4P05TASXMs
 
-Sugestão: usar o pino 13 para verificar o controle de um LED
+Sugestão: colocar um outro LED no 13 para verificar o controle de um LED
+Sugestão: carregar o exemplo ReadAnalogVoltage e testar o sensor ao aproximar a mão ou mesmo tocar-lhe;
 
 > [!WARNING]
 > o pino 13 é o único em que podes colocar um led diretamente sem uma resistência em série;
@@ -69,11 +70,6 @@ delay (50);
 
 Comentar
 
-## Sistema autoalimentado
-6. Alimentar a Placa arduino com as pilhas/Baterias e verificar se a luz verde acende
-
-Sugestão: testar distância
-
 ## Controlar o LED por BT
 
 7. Desligar a alimentação da pilha e Conectar o BT ao ARDUINO usando a placa de ensaio
@@ -99,7 +95,10 @@ Sugestão: controlar por voz e movimento do telefone
 > [!TIP]
 > No momento de enviar o novo código, desligar a placa BT;  
 
-Sugestão: carregar o exemplo ReadAnalogVoltage e testar o sensor ao aproximar a mão ou mesmo tocar-lhe;
+## Sistema alimentado por bateria/pilha
+6. Alimentar a Placa arduino com as pilhas/Baterias e verificar se a luz verde acende
+
+Sugestão: testar distância
 
 # Isto sugere algum projeto?
     
