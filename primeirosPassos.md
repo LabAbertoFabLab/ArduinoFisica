@@ -121,11 +121,15 @@ RX trocado com o TX da placa;
 
 > Sugestão: controlar por voz e movimento do telefone usando a APP bluetooth arduino controll
    
-> [!TIP]
-> No momento de reenviar um novo código, desligar a placa BT;  
+> [!Important]
+> IMPORTANTE: no momento de reenviar um novo código, desligar a placa BT;  
 
 ## Sistema alimentado por bateria/pilha
+
 6. Alimentar a Placa arduino com as pilhas/Baterias e verificar se a luz verde acende;
+
+> [!Important]
+> IMPORTANTE: qual é a tensão de trabalho do Arduino UNO? [Tech-Specs](https://docs.arduino.cc/hardware/uno-rev3/#tech-specs)
 
 > Sugestão: testar distância a que se pode controlar o LED
 
