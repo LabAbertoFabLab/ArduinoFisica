@@ -5,14 +5,17 @@
 
 1. Abre o software arduino 
 
-> NOTA: instalar aqui: https://support.arduino.cc/hc/en-us/articles/360019833020-Download-and-install-Arduino-IDE)
+> NOTA: caso não tenhas o software [clica aqui para instalar](https://support.arduino.cc/hc/en-us/articles/360019833020-Download-and-install-Arduino-IDE)
 
-2. conecta a porta USB B da placa arduino com a porta USB A do teu computador;
+2. Conecta a porta USB B da placa arduino com a porta USB A do teu computador;
 
-Abre o exemplo blink: **menu**: file -> examples -> basics -> blink
-Enviar o código botão seta upload
-NOTA: em caso de erro verificar no menu: tools -> board e port
-Comentar o código
+2.1 Abre o exemplo blink: **menu**: file -> examples -> basics -> blink
+2.2 Enviar o código botão seta upload
+
+> NOTA: em caso de erro verificar no menu: tools -> board e port
+
+> [!TIP]
+> Comentar o código
 > Sugestão: alterar o tempo para metade;
 > Sugestão: Imitar com som o código morse para May Day, SOS, ...---...: som: https://www.youtube.com/watch?v=N4P05TASXMs
 
