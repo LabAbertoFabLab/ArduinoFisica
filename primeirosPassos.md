@@ -38,6 +38,7 @@
 > [!TIP]
 > Sugestão: alterar o tempo para metade;
 > Sugestão: Imitar com som o código morse para May Day, SOS, ...---...: som: https://www.youtube.com/watch?v=N4P05TASXMs. 
+
 > Sugestão: colocar um outro LED no 13 para verificar que este é um pin em que o LED está a salvo
 
 > [!WARNING]
