@@ -1,6 +1,18 @@
-# Primeira utilização do ARDUINO
+> Material: Arduino UNO; LDR; resistência 10 Kohm; dupont wires male-female (or male/male, se estás a usar uma placa-mãe); BT HC-06 ou HC-05; placa de ensaio (breadboard) (opcional).
 
-> Material: Arduino UNO; LDR; resistência 10 Kohm; dupont wires male-female (or male/male, se estás a usar uma placa-mãe); BT HC-06 ou HC-05; placa-mãe (opcional).
+# Antes da primeira utilização, vamos simular...
+
+1. Abre uma conta no [Tinkercad](https://www.tinkercad.com/)
+2. CREATE -> circuits
+3. Escolhe um ARDUINO: components Basic
+4. Escolhe um projeto: starters Arduino Blink
+5. Clica em START SIMULATION
+6. Procura na placa o led L e verifica o que lhe acontece?
+7. Clica em STOP SIMULATION
+8. Abre o CODE block e lê o código em modo TEXT
+9. Agora vamos procurar na caixa um ARDUINO e um cabo USB AB.
+
+# Primeira utilização do ARDUINO
 
 > [!WARNING]
 > Regra de Segurança: desligar a placa arduino da fonte de alimentação sempre que se "mexe" no circuito
@@ -16,7 +28,7 @@
 
 2.1 Abre o exemplo blink: **menu**: file -> examples -> basics -> blink. 
 
-2.2 Enviar o código: canto superior esquerdo da janela: botão seta (upload)
+2.2 Enviar o código: canto superior esquerdo da janela: botão seta (upload): o que acontece na placa?
 
 > NOTA: em caso de erro verificar se a placa e a porta são as corretas menu: tools -> board e port
 
@@ -24,8 +36,8 @@
 > Sugestão: alterar o tempo para metade;
 > Sugestão: Imitar com som o código morse para May Day, SOS, ...---...: som: https://www.youtube.com/watch?v=N4P05TASXMs
 
-Sugestão: colocar um outro LED no 13 para verificar o controle de um LED
-Sugestão: carregar o exemplo ReadAnalogVoltage e testar o sensor ao aproximar a mão ou mesmo tocar-lhe;
+Sugestão: colocar um outro LED no 13 para verificar que este é um pin em que o LED está a salvo
+Sugestão: carregar o exemplo ReadAnalogVoltage; colocar um dupont macho-macho; abrir o serial monitor e o depois o serial plotter: ao aproximar a mão ou mesmo tocar-lhe, o que acontece?
 
 > [!WARNING]
 > o pino 13 é o único em que podes colocar um led diretamente sem uma resistência em série;
