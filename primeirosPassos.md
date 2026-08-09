@@ -106,18 +106,18 @@ delay (50);
 7. Conectar o BT ao ARDUINO usando a placa de ensaio
 
 ### Bluetooth HC-05 ou 06
-Alimentação da placa BT: Vcc? GND? 
+8. Alimentação da placa BT: Vcc? GND? 
 RX trocado com o TX da placa;
 
 ### APP MIT Inventor e/ou Arduino bluetooth control
 
-1. Emparelhar
+9. Emparelhar
 > [!TIP]
 > Atenção emparelhamento: emparelhar distante de outros BT;
 
-3. Abrir a APP pré-preparada
-4. Conectar/Sincronizar
-5. Testar: lê o sensor? Controla o LED?
+10. Abrir a APP pré-preparada
+11. Conectar/Sincronizar
+12. Testar: lê o sensor? Controla o LED?
 
 > Sugestão: controlar por voz e movimento do telefone usando a APP bluetooth arduino controll
    
@@ -126,7 +126,7 @@ RX trocado com o TX da placa;
 
 ## Sistema alimentado por bateria/pilha
 
-6. Alimentar a Placa arduino com as pilhas/Baterias e verificar se a luz verde acende;
+13. Alimentar a Placa arduino com as pilhas/Baterias e verificar se a luz verde acende;
 
 > [!Important]
 > IMPORTANTE: qual é a tensão de trabalho do Arduino UNO? [Tech-Specs](https://docs.arduino.cc/hardware/uno-rev3/#tech-specs)
