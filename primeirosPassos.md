@@ -1,4 +1,4 @@
-> Material: Arduino UNO; LDR; resistências 10 Kohm e 220 ohm; dupont wires male-female (or male/male, se estás a usar uma placa-mãe); BT HC-06 ou HC-05; placa de ensaio (breadboard) (opcional); duas baterias 18650 e suporte.
+> Material: Arduino UNO; LDR; resistências 10 Kohm e 220 ohm; dupont wires male-female (or male/male, se estás a usar uma placa-mãe); BT HC-06 ou HC-05; placa de ensaio (breadboard) (opcional); duas baterias 18650 e suporte; multimetro (opcional).
 
 > [!WARNING]
 > Regra de Segurança: as baterias 18650 tem que ser usadas em condições próprias: carregamento; armazenamento; refrigeração; CC;
