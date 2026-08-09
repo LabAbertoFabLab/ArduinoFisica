@@ -2,6 +2,7 @@
 
 > [!WARNING]
 > Regra de Segurança: desligar a placa arduino da fonte de alimentação sempre que se "mexe" no circuito
+
 > Comentar o código
 
 1. Abre o software arduino 
