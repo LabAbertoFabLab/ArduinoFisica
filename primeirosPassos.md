@@ -16,7 +16,7 @@
 
 2.1 Abre o exemplo blink: **menu**: file -> examples -> basics -> blink. 
 
-2.2 Enviar o código botão seta upload
+2.2 Enviar o código: canto superior esquerdo da janela: botão seta (upload)
 
 > NOTA: em caso de erro verificar no menu: tools -> board e port
 
