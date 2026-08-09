@@ -111,8 +111,8 @@ delay (50);
 Alimentação da placa BT: Vcc? GND? 
 RX trocado com o TX da placa;
 
-### APP MIT Inventor
-Dois passos:
+### APP MIT Inventor e/ou Arduino bluetooth control
+
 1. Emparelhar
 > [!TIP]
 > Atenção emparelhamento: emparelhar distante de outros BT;
