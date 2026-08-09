@@ -132,4 +132,4 @@ RX trocado com o TX da placa;
 # Isto sugere algum projeto?
 
 Tarefas
--[ ] Colocar fotos
+- [ ] Colocar fotos
