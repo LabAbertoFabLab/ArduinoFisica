@@ -1,5 +1,7 @@
 # Primeira utilização do ARDUINO
 
+> Material: Arduino UNO; LDR; resistência 10 Kohm; dupont wires male-female (or male/male, se estás a usar uma placa-mãe); BT HC-06 ou HC-05; placa-mãe (opcional).
+
 > [!WARNING]
 > Regra de Segurança: desligar a placa arduino da fonte de alimentação sempre que se "mexe" no circuito
 
