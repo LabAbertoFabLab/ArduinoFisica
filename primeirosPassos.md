@@ -53,7 +53,7 @@ Sugestão: carregar o exemplo ReadAnalogVoltage; colocar um dupont macho-macho; 
 ```
 //Primeiros passos: variáveis; controlar LED; sensor Luz;
 //comunicação Serial; Bluetooth;
-//
+
 const int LED = 13; // Led embebido na placa Arduino
 int sensor = A0; // sensor no pino A0
 int medicao = 0; // medição do sensor
@@ -103,37 +103,32 @@ delay (50);
 
 ## Controlar o LED por BT usando a APP do MIT Inventor
 
-7. Desligar a alimentação da pilha e Conectar o BT ao ARDUINO usando a placa de ensaio
+7. Conectar o BT ao ARDUINO usando a placa de ensaio
 
 !?!?!!?Colocar foto aqui!?!?!?
 
-Alimentação da placa BT: voltagem? GND? cores; RX trocado com o TX da placa: RX TX peculiaridade;
-Emparelhar
-Conectar/Sincronizar
+### Bluetooth HC-05 ou 06
+Alimentação da placa BT: Vcc? GND? 
+RX trocado com o TX da placa;
 
+### APP MIT Inventor
+Dois passos:
+1. Emparelhar
 > [!TIP]
 > Atenção emparelhamento: emparelhar distante de outros BT;
 
-8. Instalar e Configurar a APP
-Conectar com o BT
-Configurar botões
-Usar terminal e botões
+3. Abrir a APP pré-preparada
+4. Conectar/Sincronizar
+5. Testar: lê o sensor? Controla o LED?
 
-Sugestão: controlar por voz e movimento do telefone
-
-9. Desmarcar os comentários no código e carregar o novo código novamente
+> Sugestão: controlar por voz e movimento do telefone usando a APP bluetooth arduino controll
    
 > [!TIP]
-> No momento de enviar o novo código, desligar a placa BT;  
+> No momento de reenviar um novo código, desligar a placa BT;  
 
 ## Sistema alimentado por bateria/pilha
-6. Alimentar a Placa arduino com as pilhas/Baterias e verificar se a luz verde acende
+6. Alimentar a Placa arduino com as pilhas/Baterias e verificar se a luz verde acende;
 
-Sugestão: testar distância
+> Sugestão: testar distância a que se pode controlar o LED
 
 # Isto sugere algum projeto?
-    
-
-
-
-
