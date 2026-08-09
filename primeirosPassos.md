@@ -15,6 +15,7 @@
 2. Conecta a porta USB B da placa arduino com a porta USB A do teu computador;
 
 2.1 Abre o exemplo blink: **menu**: file -> examples -> basics -> blink. 
+
 2.2 Enviar o código botão seta upload
 
 > NOTA: em caso de erro verificar no menu: tools -> board e port
