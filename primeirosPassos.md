@@ -1,4 +1,4 @@
-> Material: Arduino UNO; LDR; resistência 10 Kohm; dupont wires male-female (or male/male, se estás a usar uma placa-mãe); BT HC-06 ou HC-05; placa de ensaio (breadboard) (opcional).
+> Material: Arduino UNO; LDR; resistências 10 Kohm e 220 ohm; dupont wires male-female (or male/male, se estás a usar uma placa-mãe); BT HC-06 ou HC-05; placa de ensaio (breadboard) (opcional).
 
 # Antes da primeira utilização, vamos simular...
 
@@ -37,10 +37,11 @@
 > Sugestão: Imitar com som o código morse para May Day, SOS, ...---...: som: https://www.youtube.com/watch?v=N4P05TASXMs
 
 Sugestão: colocar um outro LED no 13 para verificar que este é um pin em que o LED está a salvo
-Sugestão: carregar o exemplo ReadAnalogVoltage; colocar um dupont macho-macho; abrir o serial monitor e o depois o serial plotter: ao aproximar a mão ou mesmo tocar-lhe, o que acontece?
 
 > [!WARNING]
 > o pino 13 é o único em que podes colocar um led diretamente sem uma resistência em série;
+
+Sugestão: carregar o exemplo ReadAnalogVoltage; colocar um dupont macho-macho; abrir o serial monitor e o depois o serial plotter: ao aproximar a mão ou mesmo tocar-lhe, o que acontece?
 
 # Controlar o LED
 
