@@ -13,7 +13,7 @@
 6. Procura na placa o led L e verifica o que lhe acontece?
 7. Clica em STOP SIMULATION
 8. Abre o CODE block e lê o código em modo TEXT
-9. Agora vamos procurar na caixa um ARDUINO e um cabo USB AB.
+9. Repetir esta secção, agora com o ARDUINO em 4D! Procura na caixa um ARDUINO e um cabo USB AB.
 
 # Primeira utilização do ARDUINO
 
@@ -38,8 +38,7 @@
 > [!TIP]
 > Sugestão: alterar o tempo para metade;
 > Sugestão: Imitar com som o código morse para May Day, SOS, ...---...: som: https://www.youtube.com/watch?v=N4P05TASXMs
-
-Sugestão: colocar um outro LED no 13 para verificar que este é um pin em que o LED está a salvo
+> Sugestão: colocar um outro LED no 13 para verificar que este é um pin em que o LED está a salvo
 
 > [!WARNING]
 > o pino 13 é o único em que podes colocar um led diretamente sem uma resistência em série;
@@ -100,7 +99,7 @@ delay (50);
 ```
 
 5. Testar os valores 0 e 1 no **serial monitor**
-6. Usar o ARDUINO em 4D!
+6. Repetir esta secção, agora com o ARDUINO em 4D!
 
 ## Controlar o LED por BT usando a APP do MIT Inventor
 
