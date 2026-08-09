@@ -1,4 +1,7 @@
-> Material: Arduino UNO; LDR; resistências 10 Kohm e 220 ohm; dupont wires male-female (or male/male, se estás a usar uma placa-mãe); BT HC-06 ou HC-05; placa de ensaio (breadboard) (opcional).
+> Material: Arduino UNO; LDR; resistências 10 Kohm e 220 ohm; dupont wires male-female (or male/male, se estás a usar uma placa-mãe); BT HC-06 ou HC-05; placa de ensaio (breadboard) (opcional); duas baterias 18650 e suporte.
+
+> [!WARNING]
+> Regra de Segurança: as baterias 18650 tem que ser usadas em condições próprias: carregamento; armazenamento; refrigeração; CC;
 
 # Antes da primeira utilização, vamos simular...
 
@@ -43,10 +46,10 @@ Sugestão: colocar um outro LED no 13 para verificar que este é um pin em que o
 
 Sugestão: carregar o exemplo ReadAnalogVoltage; colocar um dupont macho-macho; abrir o serial monitor e o depois o serial plotter: ao aproximar a mão ou mesmo tocar-lhe, o que acontece?
 
-# Controlar o LED
+# Controlar o LED embebido na placa arduino
 
-3. Controlar o LED embebido na placa arduino, usando o **serial monitor**
-4. Carregar este programa:
+4. Vamos simular primeiro
+5. Carregar este programa:
 
 ```
 //Primeiros passos: variáveis; controlar LED; sensor Luz;
@@ -97,14 +100,13 @@ delay (50);
 ```
 
 5. Testar os valores 0 e 1 no **serial monitor**
-
-Comentar
+6. Usar o ARDUINO em 4D!
 
 ## Controlar o LED por BT usando a APP do MIT Inventor
 
 7. Desligar a alimentação da pilha e Conectar o BT ao ARDUINO usando a placa de ensaio
 
-Colocar foto aqui!?!?!?
+!?!?!!?Colocar foto aqui!?!?!?
 
 Alimentação da placa BT: voltagem? GND? cores; RX trocado com o TX da placa: RX TX peculiaridade;
 Emparelhar
