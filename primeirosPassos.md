@@ -1,7 +1,7 @@
 # Primeira utilização do ARDUINO
 
 > [!WARNING]
-> Regra de Segurança: desligar a placa arduino da fonte de alimentação sempre que se mexe no circuito
+> Regra de Segurança: desligar a placa arduino da fonte de alimentação sempre que se "mexe" no circuito
 
 1. Abre o software arduino 
 
