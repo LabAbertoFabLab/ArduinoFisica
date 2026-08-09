@@ -2,6 +2,7 @@
 
 > [!WARNING]
 > Regra de Segurança: desligar a placa arduino da fonte de alimentação sempre que se "mexe" no circuito
+> Comentar o código
 
 1. Abre o software arduino 
 
@@ -15,7 +16,6 @@
 > NOTA: em caso de erro verificar no menu: tools -> board e port
 
 > [!TIP]
-> Comentar o código
 > Sugestão: alterar o tempo para metade;
 > Sugestão: Imitar com som o código morse para May Day, SOS, ...---...: som: https://www.youtube.com/watch?v=N4P05TASXMs
 
