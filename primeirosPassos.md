@@ -18,7 +18,7 @@
 
 2.2 Enviar o código: canto superior esquerdo da janela: botão seta (upload)
 
-> NOTA: em caso de erro verificar no menu: tools -> board e port
+> NOTA: em caso de erro verificar se a placa e a porta são as corretas menu: tools -> board e port
 
 > [!TIP]
 > Sugestão: alterar o tempo para metade;
