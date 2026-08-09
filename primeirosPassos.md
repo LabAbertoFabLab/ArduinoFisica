@@ -28,6 +28,9 @@ Sugestão: carregar o exemplo ReadAnalogVoltage e testar o sensor ao aproximar a
 4. Carregar este programa:
 
 ```
+//Primeiros passos: variáveis; controlar LED; sensor Luz;
+//comunicação Serial; Bluetooth;
+//
 const int LED = 13; // Led embebido na placa Arduino
 int sensor = A0; // sensor no pino A0
 int medicao = 0; // medição do sensor
@@ -51,26 +54,32 @@ void loop() {
       digitalWrite(LED, HIGH);
       // medir
       medicao = analogRead(sensor);
-      Serial.println("LED ligado");
+      Serial.print("Sistema ativo");
+      Serial.print(",");
       Serial.println(medicao);
       
     } 
     else if (comando == '0') {
       digitalWrite(LED, LOW);
-      Serial.println("LED desligado");
+      Serial.print("Sistema inativo");
+      Serial.print(",");
+      Serial.println(medicao);
     }
     else {
-      Serial.println("nota: Envia '1' para acender o LED e '0' para apagar");}
+      Serial.println("nota: Envia '1' para acender o LED e '0' para apagar");
+      Serial.print(",");
+      Serial.println(medicao);
+    }
   }
 delay (50);
 }
 ```
 
-5. Testar os valores = e 1 no **serial monitor**
+5. Testar os valores 0 e 1 no **serial monitor**
 
 Comentar
 
-## Controlar o LED por BT
+## Controlar o LED por BT usando a APP do MIT Inventor
 
 7. Desligar a alimentação da pilha e Conectar o BT ao ARDUINO usando a placa de ensaio
 
