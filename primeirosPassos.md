@@ -105,8 +105,6 @@ delay (50);
 
 7. Conectar o BT ao ARDUINO usando a placa de ensaio
 
-!?!?!!?Colocar foto aqui!?!?!?
-
 ### Bluetooth HC-05 ou 06
 Alimentação da placa BT: Vcc? GND? 
 RX trocado com o TX da placa;
@@ -132,3 +130,6 @@ RX trocado com o TX da placa;
 > Sugestão: testar distância a que se pode controlar o LED
 
 # Isto sugere algum projeto?
+
+Tarefas
+[ ]- Colocar fotos
